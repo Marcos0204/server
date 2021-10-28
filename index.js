@@ -14,10 +14,7 @@ const PORT = process.env.PORT || 4000;
 
 //define la ruta principal 
 
-app.get('/', (req, res)=>{
-    res.send('hola mundo')
-})
-
+app.use('/api/usuarios', require('./routes/Users'))
 //Arrarcar la app
 app.listen(PORT, () =>{
     console.log(`La aplicaicon esta funcionando en el puerto ${PORT}`)
