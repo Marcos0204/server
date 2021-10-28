@@ -11,6 +11,9 @@ connectDB();
 
 const PORT = process.env.PORT || 4000;
 
+//habiblitar express.json
+app.use(express.json({extended: true}));
+
 
 //define la ruta principal 
 
